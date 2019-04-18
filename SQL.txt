@@ -1,0 +1,56 @@
+/*Author: Dominic Sembiante
+*Subject: The below SQL queries are some examples of the solutions to assignments
+*that were part of my college database courses. I have attached this page to
+*demonstrate some of my knowledge regarding SQL.
+*/
+
+1.) 
+SELECT Authors.au_lname, Authors.au_fname, BookAuthor.au_id, BookAuthor.title_id, Books.title
+FROM Authors 
+INNER JOIN (Books INNER JOIN BookAuthor ON Books.title_id = BookAuthor.title_id) ON Authors.au_id = BookAuthor.au_id;
+
+2.) 
+SELECT Authors.au_state, Sum(Books.ytd_sales) AS SumOfytd_sales
+FROM Books 
+INNER JOIN (Authors INNER JOIN BookAuthor ON Authors.au_id = BookAuthor.au_id) ON Books.title_id = BookAuthor.title_id
+GROUP BY Authors.au_state;
+
+3.) 
+SELECT first_name, last_name, email, store_id
+FROM customer
+WHERE store_id = 2
+AND last_name between 'A' and 'N'
+ORDER BY last_name asc;
+
+4.) 
+SELECT title, rating, name
+FROM film
+LEFT JOIN film_category
+ON film.film_id = film_category.film_id
+LEFT JOIN category
+ON film_category.category_id = category.category_id
+WHERE title BETWEEN 'Homeward Bound' AND 'The Lost Boys'
+ORDER BY title ASC;
+
+5.) 
+SELECT Avg(length) as "Average_Film_Length", Max(length) as "Maximum_Film_Length", Min(length) as "Minimum_Film_Length", rating
+FROM film
+GROUP BY rating
+ORDER BY rating DESC;
+
+6.)
+CREATE TABLE Movies (
+    MovieID int NOT NULL,
+    ActorID int,
+    PRIMARY KEY (MovieID),
+    FOREIGN KEY (ActorID) REFERENCES Actors(ActorID)
+
+7.)
+CREATE TABLE Team (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+);
+

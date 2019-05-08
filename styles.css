@@ -9,3 +9,6 @@ body {
 .degree {
 	font-style:italic;
 }
+li {
+	margin-left: 15px;
+}

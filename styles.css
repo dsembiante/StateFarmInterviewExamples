@@ -1,15 +1,30 @@
 body {
-	background: skyblue;
-	color: black;
+	background: #2DCFFA;
+	color: #000000;
 	font-size: 15px;
 	font-family: "Times New Roman", Times, serif;
 	font-weight: normal;
 	margin: auto;
-	text-indent: 1%;
+}
+header,footer {
+	background: #094364;
+}
+footer {
+	color: #FFFFFF;
 }
 .degree {
 	font-style:italic;
 }
+.content-wrap {
+	max-width: 1800px;
+	margin: 0 auto;
+}
 li {
 	margin-left: 15px;
+}
+a {
+		color: #E9291C;
+}
+a:hover {
+	text-decoration: none;
 }

@@ -8,10 +8,18 @@ body {
 }
 header,footer {
 	background: #094364;
+	color: #FFFFFF;
+}
+header {
+	text-align: center;
 }
 footer {
-	color: #FFFFFF;
 	text-align: center;
+}
+.profile-img {
+	width: 550px;
+	height: 425px;
+	border-radius: 50%;
 }
 .degree {
 	font-style:italic;
@@ -19,6 +27,7 @@ footer {
 .content-wrap {
 	max-width: 1800px;
 	margin: 0 auto;
+	padding: 10px;
 }
 li {
 	margin-left: 15px;

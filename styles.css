@@ -16,6 +16,9 @@ header {
 footer {
 	text-align: center;
 }
+h3 {
+	margin:0;
+}
 .profile-img {
 	width: 570px;
 	height: 425px;
@@ -28,13 +31,14 @@ footer {
 	max-width: 1800px;
 	margin: 0 auto;
 	padding: 10px;
-}
-li {
-	margin-left: 15px;
+	overflow: auto;
 }
 a {
 		color: #E9291C;
 }
 a:hover {
 	text-decoration: none;
+}
+h3 ~ p {
+	margin:0;
 }

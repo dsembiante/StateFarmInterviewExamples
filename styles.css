@@ -12,12 +12,27 @@ header,footer {
 }
 header {
 	text-align: center;
+	padding-top: 60px;
 }
 footer {
 	text-align: center;
 }
 h3 {
 	margin:0;
+}
+nav {
+	text-align:center;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 .profile-img {
 	width: 570px;
@@ -30,7 +45,7 @@ h3 {
 .content-wrap {
 	max-width: 1800px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 30px 20px;
 	overflow: auto;
 }
 a {

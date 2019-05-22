@@ -1,59 +1,156 @@
+/* Color Palette
+#191970 - navy blue
+#FFFFFF - white
+#708090 - slategray
+#808080 - gray
+#000000 - black
+#F31414 - red
+#EDF2F4 - blue/white
+#00042B - dark blue
+*/
+
+/* Global styles
+-------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-	background: #BAC1C2;
-	color: #000000;
-	font-size: 15px;
-	font-family: "Times New Roman", Times, serif;
-	font-weight: normal;
-	margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
-header,footer {
-	background: #094364;
-	color: #FFFFFF;
+h1, h2 {
+  font-family: "Times New Roman";
+  font-weight: 100;
 }
-header {
-	text-align: center;
-	padding-top: 60px;
+h1 {
+  font-size: 80px;
 }
-footer {
-	text-align: center;
+h2 {
+  font-size: 40px;
+  margin-top: 0;
 }
 h3 {
-	margin:0;
-}
-nav {
-	text-align:center;
-	background: white;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-nav a {
-	display: inline-block;
-	padding: 15px 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-.profile-img {
-	width: 570px;
-	height: 425px;
-	border-radius: 50%;
-}
-.degree {
-	font-style:italic;
-}
-.content-wrap {
-	max-width: 1800px;
-	margin: 0 auto;
-	padding: 30px 20px;
-	overflow: auto;
+  margin: 0;
 }
 a {
-		color: #E9291C;
+  color: #F31414;
 }
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  background: #00042B;
+  color: #FFFFFF;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #FFFFFF;
 }
 h3 ~ p {
-	margin:0;
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+  background: 	#DCDCDC;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Technical Skills
+-------------------------*/
+.skills {
+  background: #C0C0C0;	
+}
+
+/* Honors & Awards
+-------------------------*/
+.awards {
+  background: #808080;		
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: left;
+  }
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
 }

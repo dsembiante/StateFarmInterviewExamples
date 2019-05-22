@@ -5,94 +5,150 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="width=device-width, initial-scale=1.0">
-      <title>Dominic Sembiante | Resume</title>
-      <link rel="stylesheet" href="css/styles.css">
-   </head>
-   <body>
-      <header id="about">
-		  <nav>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominic Sembiante | Resume</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Intro -->
+  <header id="about">
+    <nav>
 		  <a href="#about">About</a>
 		  <a href="#work">Work Experience</a>
 		  <a href="#education">Education</a>
 		  <a href="#skills">Technical Skills</a>
 		  <a href="#awards">Honors & Awards</a>
 		  <a href="#contact">Contact Information</a>
-		  </nav>
-         <div class="content-wrap">
-            <img class="profile-img" src="images/ProfilePic.jpg" alt="Dominic Sembiante">
-			 <h1>Dominic Sembiante</h1>
-               <h2>Systems Administrator</h2>
-               <p>Experienced Systems Administrator with a demonstrated history of working in the food production industry. Strong information technology professional with a Bachelors focused in Information Systems from Millikin University.</p>
-            </div>
-      </header>
-      <main>
-         <section id="work">
-            <div class="content-wrap">
-               <h2>Work Experience</h2>
-               <h3>Systems Administrator</h3>
-               <p>Archer Daniels Midland Company - Decatur, IL</p>
-               <p>June 2018 - Present</p>
-               <p>Responsibilities:</p>
-               <ul>
+    </nav>
+    <div class="content-wrap">
+     <img class="profile-img" src="images/ProfilePic.jpg" alt="Dominic Sembiante">
+      <div>
+        <h1>Dominic Sembiante</h1>
+        <h2>Systems Administrator</h2>
+        <p>Experienced Systems Administrator with a demonstrated history of working in the food production industry. Strong information technology professional with a Bachelors focused in Information Systems from Millikin University.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Work Experience -->
+    <section id="work" class="work">
+      <div class="content-wrap">
+        <h2>Work Experience</h2>
+
+        <!-- Job 1 Details -->
+		<div class="col-narrow">
+			<h3>Systems Administrator</h3>
+			<p>Archer Daniels Midland Company</p>
+			<p>Decatur, IL</>
+            <p>June 2018 - Present</p>
+        </div>
+
+        <div class="col-wide job-description">
+          <ul>
                   <li>Manage resources to accomplish projects within specified deadlines and budgets</li>
                   <li>Communicate with team, other departments within company, and external companies by working to complete tasks and gather data to develop solutions for projects</li>
                   <li>Use system management programs to monitor servers in virtual, physical, and local remote environments</li>
                   <li>Implement and manage servers</li>
                </ul>
-               <h3>Teller</h3>
-               <p>United Equity Credit Union - Decatur, IL</p>
-               <p>June 2016 - May 2018</p>
-               <p>Responsibilities:</p>
-               <ul>
+        </div>
+
+        <!-- Job 2 Details -->
+        <div class="col-narrow">
+          <h3>Service Representative</h3>
+          <p>United Equity Credit Union</p>
+		  <p>Decatur, IL</>
+          <p>June 2016 - May 2018</p>
+        </div>
+        <div class="col-wide job-description">
+          <ul>
                   <li>Assisted members regarding questions about their bank account</li>
                   <li>Maintained customer confidentiality </li>
                   <li>Entered critical account data into automated system of record; ensuring zero errors or omissions</li>
                   <li>Received and resolve customer complaints </li>
                </ul>
-            </div>
-         </section>
-         <section id="education">
-            <div class="content-wrap">
-               <h2>Education</h2>
-               <h3>Millikin University, May 2018</h3>
-               <p class="degree">Bachelors of Science, Information Systems</p>
-			   <br></br>
-               <h3>Richland Community College, May 2016</h3>
-               <p class="degree">Associates of Arts</p>
-            </div>
-         </section>
-         <section id="skills">
-            <div class="content-wrap">
-               <h2>Technical Skills</h2>
-               <ul>
+          </ul>
+        </div>
+
+        <!-- Job 3 Details -->
+        <div class="col-narrow">
+          <h3>Electronics Customer Representative</h3>
+		  <p>Target Decatur</p>
+		  <p>Decatur, IL</>
+          <p>August 2012 - May 2016</p>
+        </div>
+        <div class="col-wide job-description">
+        <ul>
+                  <li>Provided customer support in the electronic section of Target by assisting guests with any questions they had</li>
+                  <li>Ensured products were properly displayed according to company standards</li>
+                  <li>Cross trained to provide team member support on the sales floor, cashier, and flow team</li>
+               </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education">
+      <div class="content-wrap">
+        <h2>Education</h2>
+
+        <!-- School 1 -->
+        <h3>Millikin University - Decatur, IL</h3>
+        <p>Bachelors of Science, Information Systems</p>
+        <p>May 2018</p>
+
+        <!-- School 2 -->
+        <h3>Richland Community College - Decatur, IL</h3>
+        <p>Associates of Arts</p>
+        <p>May 2016</p>
+      </div>
+    </section>
+  </main>
+
+    <!-- Technical Skills -->
+	<section class="skills" id="skills">
+      <div class="content-wrap">
+        <h2>Technical Skills</h2>
+		
+        <div class="col-wide job-description">
+          <ul>
                   <li>Exposed to PowerShell, SQL, Java, HTML, and CSS</li>
                   <li>Virtualization Technology and Cloud Storage</li>
                   <li>VMware, Dell EMC, Dell OpenManage, and Dell Support Assist</li>
                   <li>Active Directory </li>
                   <li>Server management and data manipulation</li>
                </ul>
-            </div>
-         </section>
-         <section id="awards">
-            <div class="content-wrap">
-               <h2>Honors & Awards</h2>
-               <ul>
+        </div>
+		</section>
+	
+	<!-- Honors & Awards -->
+		<section class="awards" id="awards">
+      <div class="content-wrap">
+        <h2>Honors & Awards</h2>
+		
+        <div class="col-wide job-description">
+          <ul>
                   <li>Delta MU Delta Honors Society (Business)</li>
                   <li>Academic Dean’s list</li>
-               </ul>
-            </div>
-         </section>
-      </main>
-      <footer id="contact">
-         <div class="content-wrap">
-            <h2>Contact Information</h2>
-            <p>Email: dgsembiante@gmail.com</p>
-	    <p>Phone: (217)-853-3127</p>
-            <p><a href="https://www.linkedin.com/in/dominic-sembiante-92b598149/">DominicSembiante_LinkedIn</a></p>
-         </div>
-      </footer>
-   </body>
+          </ul>
+        </div>
+		</section>
+	
+  <!-- Footer & Contact Info -->
+  <footer id="contact">
+    <div class="content-wrap">
+      <h2>Contact Information</h2>
+
+      <!-- Contact Links -->
+      <div class="contact-info">
+        <a href="dgsembiante@gmail.com">dgsembiante@gmail.com</a>
+        <a href="https://www.linkedin.com/in/dominic-sembiante-92b598149/">LinkedIn</a>
+		<a> Phone: (217)-853-3127</a>
+      </div>
+
+    </div>
+  </footer>
+</body>
 </html>

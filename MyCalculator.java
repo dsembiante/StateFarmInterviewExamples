@@ -1,5 +1,5 @@
 /* Author: Dominic Sembiante
- * This program is designed as a calculator to compute a simple equation. take in two numeric inputs
+ * This program is designed as a calculator to compute a simple equation. 
  * Takes in two numeric inputs of the user's choice and one of four operators shown , then runs an equation on them to get the output.
  */
 
